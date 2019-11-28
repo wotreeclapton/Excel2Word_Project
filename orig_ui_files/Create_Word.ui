@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CreateWordWindow</class>
+ <widget class="QDialog" name="CreateWordWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>421</width>
+    <height>222</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>421</width>
+    <height>222</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>421</width>
+    <height>222</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Excel2Word</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../img/x2w_icon.png</normaloff>../img/x2w_icon.png</iconset>
+  </property>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>10</y>
+     <width>86</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="pixmap">
+    <pixmap>../img/excel-icon-86x80.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>180</y>
+     <width>161</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="EndRowBox">
+   <property name="geometry">
+    <rect>
+     <x>145</x>
+     <y>190</y>
+     <width>26</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string>900</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="FileBox">
+   <property name="geometry">
+    <rect>
+     <x>17</x>
+     <y>98</y>
+     <width>340</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Enter file location</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="EndColBox">
+   <property name="geometry">
+    <rect>
+     <x>109</x>
+     <y>190</y>
+     <width>26</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string>&gt;Aa</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="StartRowLabel">
+   <property name="geometry">
+    <rect>
+     <x>55</x>
+     <y>172</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Row</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="EndColLabel">
+   <property name="geometry">
+    <rect>
+     <x>111</x>
+     <y>172</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Col</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="StartColBox">
+   <property name="geometry">
+    <rect>
+     <x>17</x>
+     <y>190</y>
+     <width>26</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="inputMask">
+    <string>&gt;Aa</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="SheetcomboBox">
+   <property name="geometry">
+    <rect>
+     <x>17</x>
+     <y>146</y>
+     <width>190</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>38</x>
+     <y>190</y>
+     <width>20</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="StartRowBox">
+   <property name="geometry">
+    <rect>
+     <x>53</x>
+     <y>190</y>
+     <width>26</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string>900</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TabBoxLabel">
+   <property name="geometry">
+    <rect>
+     <x>17</x>
+     <y>126</y>
+     <width>150</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Choose Sheet name </string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton">
+   <property name="geometry">
+    <rect>
+     <x>363</x>
+     <y>98</y>
+     <width>42</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="EndRowLabel">
+   <property name="geometry">
+    <rect>
+     <x>147</x>
+     <y>172</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Row</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="StartCollabel">
+   <property name="geometry">
+    <rect>
+     <x>19</x>
+     <y>172</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Col</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>190</y>
+     <width>20</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>10</y>
+     <width>86</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="pixmap">
+    <pixmap>../img/word-icon-86x80.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>98</x>
+     <y>10</y>
+     <width>226</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../img/Arrors.png</pixmap>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>FileBox</tabstop>
+  <tabstop>toolButton</tabstop>
+  <tabstop>SheetcomboBox</tabstop>
+  <tabstop>StartColBox</tabstop>
+  <tabstop>StartRowBox</tabstop>
+  <tabstop>EndColBox</tabstop>
+  <tabstop>EndRowBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>toolButton</sender>
+   <signal>clicked()</signal>
+   <receiver>CreateWordWindow</receiver>
+   <slot>browse_for_workbook()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>383</x>
+     <y>101</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>324</x>
+     <y>57</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>CreateWordWindow</receiver>
+   <slot>ok_button_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>294</x>
+     <y>192</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>313</x>
+     <y>220</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>CreateWordWindow</receiver>
+   <slot>cancel_button_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>365</x>
+     <y>199</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>276</x>
+     <y>216</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>FileBox</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>CreateWordWindow</receiver>
+   <slot>populate_sheet_cmb()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>210</x>
+     <y>96</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>119</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>browse_for_workbook()</slot>
+  <slot>ok_button_clicked()</slot>
+  <slot>cancel_button_clicked()</slot>
+  <slot>populate_sheet_cmb()</slot>
+ </slots>
+</ui>
